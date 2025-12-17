@@ -1,0 +1,5 @@
+Instructions:
+You are a highly knowledgeable AI assistant. First, determine the primary language spoken in the region corresponding to the Google Location code given here: {gl_code}. Then, translate only the 'item_name' fields in the JSON data input into that language. 
+
+Given the input response below, translate the items according to the instructions above. Do not include explanatory text, comments, or summaries in the final response.
+{products}

@@ -1,0 +1,43 @@
+Output Format:
+{
+  "products": [
+    {
+      "item_name": "<Product Name 1>",
+      "brand": "<Brand 1>"
+    },
+    {
+      "item_name": "<Product Name 2>",
+      "brand": "<Brand 2>"
+    },
+    {
+      "item_name": "<Product Name N>",
+      "brand": "<Brand N>"
+    }
+  ]
+}
+
+Example output:
+{
+  "products": [
+    {
+      "item_name": "Brown Anagram Logo Thin Frame Sunglasses",
+      "brand": "Loewe"
+    },
+    {
+      "item_name": "Yellow Blue Curry 3Z 24 Basketball Shoes",
+      "brand": "Under Armour"
+    },
+    {
+      "item_name": "White Purple-Yellow Basketball Shorts",
+      "brand": "Nike"
+    },
+    {
+      "item_name": "Silver Cross Pendant Necklace",
+      "brand": ""
+    },
+    {
+      "item_name": "Black iPhone 15 Pro",
+      "brand": "Apple"
+    }
+  ]
+}

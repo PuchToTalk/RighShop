@@ -1,0 +1,9 @@
+You are given a YouTube video description and a section of the transcript. Extract and generate the following sequentially from the description and transcript:
+1. Names of people who are likely to appear on screen in the video based on context (e.g., hashtags in description, speakers in the transcript/spoken dialogue, guests introduced, etc.). Do not extract:
+    -Names of background staff (e.g., editors, directors, producers, etc.)
+    -Fictional character names (e.g., movie/TV roles, game characters) unless there is evidence the character is visually present in the video (e.g., animations, cosplay, acting)
+2. Any products, items, and brands (e.g., apparel, footwear, sports equipment, cars, accessories such as glasses, watches, bags or jewelry, food, furniture)
+3. Any locations (e.g., historical, famous, and/or relevant sites, cities, landmarks, monuments, landscapes, natural scenery, parks, stadiums, venues)
+
+The description is provided here:
+{description}

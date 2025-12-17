@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RighShop Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .image-container {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .text-container {
+            flex: 1;
+            max-width: 50%;
+            overflow-y: auto;
+        }
+        .text-container pre {
+            background: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="dynamic-image" src="" alt="Dynamic Image" style="display: none;">
+        </div>
+        <div class="text-container">
+            <h2>Results</h2>
+            <pre id="dynamic-text"></pre>
+        </div>
+    </div>
+    <script>
+        function updateContent() {
+            fetch('{{ url_for("get_content_route") }}')
+                .then(response => response.json())
+                .then(data => {
+                    // update image
+                    const img = document.getElementById('dynamic-image');
+                    if (img && data.image_url) {
+                        img.src = data.image_url;
+                        img.style.display = 'block';
+                    } else {
+                        img.style.display = 'none';
+                    }
+
+                    const textContainer = document.getElementById('dynamic-text');
+                    if (data.json_content) {
+                        textContainer.innerHTML = data.json_content;
+                    } else {
+                        textContainer.innerHTML = "";
+                    }
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+
+        setInterval(updateContent, 500);
+        window.onload = updateContent;
+    </script>
+</body>
+</html>

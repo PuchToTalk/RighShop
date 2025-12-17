@@ -1,0 +1,2 @@
+Given the input response below, clean and format it according to the instructions above. Make the necessary replacements for brands, and ensure no unwanted comments, such as “I cannot do this,” appear in the final output. Maintain the same structure and formatting throughout.
+{preprocessed_response}

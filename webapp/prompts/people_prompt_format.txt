@@ -1,0 +1,31 @@
+Output Format:
+{
+  "people": [
+    {
+      "name": "<Famous Figure 1>",
+      "description": "<Description of Famous Figure 1>",
+      "bio": "<Link to Famous Figure 1's Wikipedia page>"
+    },
+    {
+      "name": "<Famous Figure 2>",
+      "description": "<Description of Famous Figure 2>",
+      "bio": "<Link to Famous Figure 2's Wikipedia page>"
+    }
+  ]
+}
+
+Example Output:
+{
+  "people": [
+    {
+      "name": "Zach LaVine",
+      "description": "Professional Basketball Player",
+      "bio": "https://en.wikipedia.org/wiki/Zach_LaVine"
+    },
+    {
+      "name": "Jennie Kim",
+      "description": "Singer, rapper, and dancer; member of K-pop group BLACKPINK",
+      "bio": "https://en.wikipedia.org/wiki/Jennie_(singer)"
+    }
+  ]
+}

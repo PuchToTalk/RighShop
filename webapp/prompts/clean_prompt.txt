@@ -1,0 +1,38 @@
+Follow these instructions carefully:
+The input will have the following structure delimited by double quotes (Topics may vary in content and number):
+"{
+  "people": [
+    {
+      "name": "<Person 1>",
+      "description": "<Description of Person 1>"
+    },
+    {
+      "name": "<Person N>",
+      "description": "<Description of Person N>"
+    },
+  ],
+  "background": {
+    "location": "<Background Location>",
+    "description": "<Description of Location and its Signficance>"
+  },
+  "products": [
+    {
+      "item_name": "<Product Name 1>",
+      "brand": "<Brand 1>"
+    },
+    {
+      "item_name": "<Product Name 2>",
+      "brand": "<Brand 2>"
+    },
+    {
+      "item_name": "<Product Name N>",
+      "brand": "<Brand N>"
+    }
+  ]
+}"
+-Brand Replacement: If the brand is identified as (unidentified brand), (unknown brand), (unknown), (Similar style brand: Brand X), (Likely from Brand X), (Possible brands: Brand X, Brand Y) or any other invalid/non-specific brand/text, replace it with an empty space "".
+-Background Location Replacement: If the background location is identified as (unknown), (N/A), or any other invalid/non-specific text, replace the output with an empty space "".
+-Formatting: The input will contain a JSON-formatted string. Ensure the output format is the same general format.
+-Strict Input Processing: Only modify or transform the exact input you receive. Do not add new items, placeholders, or content beyond what is provided in the input.
+-Prohibit Example Content: Do not copy, reference, or output the example input or expected output text provided in this prompt in the final response. Only work with the actual input you receive for processing.
+-Do Not Modify: Leave the rest of the content exactly as it is, including item names, descriptions, locations, significance (e.g., if no items are listed, do not list an empty space "" in the output).

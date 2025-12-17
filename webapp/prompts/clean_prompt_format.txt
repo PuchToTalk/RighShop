@@ -1,0 +1,92 @@
+Example Input:
+{
+  "people": [
+    {
+      "name": "Zach LaVine",
+      "description": "Professional Basketball Player",
+      "bio": "https://en.wikipedia.org/wiki/Zach_LaVine"
+    },
+    {
+      "name": "Jennie Kim",
+      "description": "Singer, rapper, and dancer; member of K-pop group BLACKPINK",
+      "bio": "https://en.wikipedia.org/wiki/Jennie_(singer)"
+    }
+  ],
+  "background": {
+    "location": Paris,
+    "description": "The city of light. Major tourist destination."
+  },
+  "products": [
+    {
+      "item_name":  Black Laptop,
+      "brand": "unknown brand"
+    },
+    {
+      "item_name": "Blue iPhone 12 Pro",
+      "brand": "Apple"
+    },
+    {
+      "item_name": "Tablet Z",
+      "brand": "unidentified brand"
+    },
+    {
+      "item_name": "Smartwatch with White Strap",
+      "brand": "Possible brands: Apple, Samsung"
+    },
+    {
+      "item_name": "Blue high-waisted straight jeans",
+      "brand": "Brand: Levi's, as seen in the image"
+    },
+    {
+      "item_name": "Black leather crossbody bag",
+      "brand": "likely Celine"
+    }
+  ]
+}
+
+
+Expected Output:
+{
+  "people": [
+    {
+      "name": "Zach LaVine",
+      "description": "Professional Basketball Player",
+      "bio": "https://en.wikipedia.org/wiki/Zach_LaVine"
+    },
+    {
+      "name": "Jennie Kim",
+      "description": "Singer, rapper, and dancer; member of K-pop group BLACKPINK",
+      "bio": "https://en.wikipedia.org/wiki/Jennie_(singer)"
+    }
+  ],
+  "background": {
+    "location": "Paris",
+    "description": "The city of light. Major tourist destination."
+  },
+  "products": [
+    {
+      "item_name": "Black Laptop",
+      "brand": ""
+    },
+    {
+      "item_name": "Blue iPhone 12 Pro",
+      "brand": "Apple"
+    },
+    {
+      "item_name": "Tablet Z",
+      "brand": ""
+    },
+    {
+      "item_name": "Smartwatch with White Strap",
+      "brand": ""
+    },
+    {
+      "item_name": "Blue high-waisted straight jeans",
+      "brand": "Levi's"
+    },
+    {
+      "item_name": "Black leather crossbody bag",
+      "brand": "Celine"
+    }
+  ]
+}
