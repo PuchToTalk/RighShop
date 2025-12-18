@@ -17,7 +17,7 @@ collection_name = "video_metadata"
 firestore_client = firestore.Client()
 
 headers = {
-        'X-API-KEY': "108d0d6e1320908677453002481b0ab25f4c10a7",
+        'X-API-KEY': os.environ.get('SERPER_API_KEY'),
         'Content-Type': "application/json"
     }
 
